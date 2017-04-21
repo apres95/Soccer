@@ -1,0 +1,148 @@
+body {
+	display: flex;
+}
+
+#draggable { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em; 
+}
+
+#draggable img{
+	height: 20px;
+
+}
+
+.teams {
+width: 400px;
+}
+
+
+#homeDiv {
+	height: 120px;
+	width: 300px;
+	margin: 30px 0 100px 50px;
+	background-color: 	#999999;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+#homeDiv > *  {
+	border-radius: 50%;
+	background-color: rgb(255, 0, 0);
+	height: 20px;
+	width: 20px;
+	display: inline-flex;
+}
+
+#awayDiv {
+	height: 120px;
+	width: 300px;
+	position: relative;
+	z-index: 100;
+	display: inline-block;
+	margin: 30px 0 0px 50px;
+	background-color:  	#999999;
+	padding: 30px;
+	border-radius: 5px;
+
+}
+#ball, .ball {
+	height: 15px;
+	width: 15px;
+	left: 210px;
+	 top: 296px;
+}
+
+#awayDiv > * {
+	border-radius: 50%;
+	background-color: black;
+	height: 20px;
+	width: 20px;
+	display: inline-flex;
+}
+
+
+.field {
+	position: relative;
+	z-index: -5;
+	height: 615px;
+ }
+
+ #plays {
+	margin: 30px 0 0px 60px;
+ }
+
+ .homePlays {
+	margin: 20px 0px 40px 100px;
+	width:200px;
+ }
+
+ .awayPlays {
+	margin: 20px 0px 0px 100px;
+	width:200px;
+ }
+
+
+.homePlays > * {
+    box-shadow: rgb(188, 9, 9) 0px 1px 3px 0px inset;
+    background: linear-gradient(rgb(255, 0, 0) 5%, rgb(188, 9, 9) 100%) rgb(255, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(188, 9, 9);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    text-decoration: none;
+    text-shadow: rgb(43, 102, 94) 0px -1px 0px;
+    margin-bottom: 10px
+}
+ .awayPlays > * {
+	box-shadow: rgb(60, 60, 61) 0px 1px 3px 0px inset;
+    background: linear-gradient(rgb(0, 0, 0) 5%, rgb(60, 60, 61) 100%) rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(60, 60, 61);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    text-decoration: none;
+    text-shadow: rgb(43, 102, 94) 0px -1px 0px;
+    margin-bottom: 10px
+ }
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Patua One', cursive;
+
+}
+
+.reset {
+	height: 50px;
+	margin-top: 40px;
+
+}
+
+#resetField {
+    box-shadow: rgb(7, 191, 50) 0px 1px 3px 0px inset;
+    background: linear-gradient(rgb(11, 170, 22) 5%, rgb(7, 191, 50) 100%) rgb(11, 170, 22);
+    border-radius: 5px;
+    border: 1px solid rgb(7, 191, 50);
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 110px;
+    text-decoration: none;
+    text-shadow: rgb(43, 102, 94) 0px -1px 0px;
+    margin-bottom: 10px;
+}
